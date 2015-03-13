@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14D87h" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="GuY-nd-NHC">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="MainViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cMF-x4-1Pg">
+                                <rect key="frame" x="16" y="231" width="113" height="42"/>
+                                <color key="backgroundColor" red="1" green="0.095106916301694544" blue="0.17362434896900369" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="113" id="0gN-VY-ROw"/>
+                                    <constraint firstAttribute="height" constant="42" id="Tf7-FM-6wh"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <state key="normal" title="Visit Red Dwarf">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="WiS-tR-crT" kind="push" identifier="red" id="umu-Xf-Vtp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tYc-6i-DZM">
+                                <rect key="frame" x="191" y="231" width="113" height="42"/>
+                                <color key="backgroundColor" red="0.23137254900000001" green="0.47843137250000001" blue="0.85490196080000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="113" id="OVH-fb-hjo"/>
+                                    <constraint firstAttribute="height" constant="42" id="rDq-fU-0T9"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <state key="normal" title="Visit Blue Star">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="WiS-tR-crT" kind="push" identifier="blue" id="Hy3-ml-Kkz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cMF-x4-1Pg" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="Fug-y9-llk"/>
+                            <constraint firstAttribute="centerY" secondItem="tYc-6i-DZM" secondAttribute="centerY" id="VHo-dq-CcI"/>
+                            <constraint firstAttribute="trailing" secondItem="tYc-6i-DZM" secondAttribute="trailing" constant="16" id="ag2-aM-Mjl"/>
+                            <constraint firstAttribute="centerY" secondItem="cMF-x4-1Pg" secondAttribute="centerY" id="r1c-pw-O2u"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="WUj-MP-XV2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="733" y="320"/>
+        </scene>
+        <!--Destination View Controller-->
+        <scene sceneID="1Ld-ga-3aU">
+            <objects>
+                <viewController id="WiS-tR-crT" customClass="DestinationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zDs-ul-oDH"/>
+                        <viewControllerLayoutGuide type="bottom" id="HHD-rW-2Bu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zcf-j7-gHU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tcM-py-yAV">
+                                <rect key="frame" x="0.0" y="92" width="320" height="320"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="320" id="Km7-H3-FyR"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h0b-nQ-lWH">
+                                <rect key="frame" x="130" y="437" width="60" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="C77-Vc-2mg"/>
+                                    <constraint firstAttribute="width" constant="60" id="urL-k3-dNG"/>
+                                </constraints>
+                                <state key="normal" title="Go Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="QgZ-KW-YaN" kind="unwind" unwindAction="unwindFromPlanet:" id="GXQ-2y-R5u"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="h0b-nQ-lWH" secondAttribute="centerX" id="E2u-oW-nP8"/>
+                            <constraint firstAttribute="trailing" secondItem="tcM-py-yAV" secondAttribute="trailing" id="Ein-r2-lqN"/>
+                            <constraint firstAttribute="centerY" secondItem="tcM-py-yAV" secondAttribute="centerY" id="bKm-6m-qqP"/>
+                            <constraint firstAttribute="centerX" secondItem="tcM-py-yAV" secondAttribute="centerX" id="bTa-6L-hA1"/>
+                            <constraint firstItem="tcM-py-yAV" firstAttribute="leading" secondItem="zcf-j7-gHU" secondAttribute="leading" id="sJv-uJ-rjh"/>
+                            <constraint firstItem="h0b-nQ-lWH" firstAttribute="top" secondItem="tcM-py-yAV" secondAttribute="bottom" constant="25" id="yFe-ct-CCS"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="m2B-zt-Nl3"/>
+                    <connections>
+                        <outlet property="planetImageView" destination="tcM-py-yAV" id="PYm-qE-0c0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XIA-jx-Ghn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="QgZ-KW-YaN" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1089" y="320"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ulM-yC-RHZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GuY-nd-NHC" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="X0w-11-0Bp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            <color key="textShadowColor" red="0.23137254900000001" green="0.47843137250000001" blue="0.85490196080000003" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="l4W-sc-YS3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7RR-9y-Ydx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="201" y="320"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="umu-Xf-Vtp"/>
+    </inferredMetricsTieBreakers>
+</document>
